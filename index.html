@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+</head>
+<body>
+    <h1>Planets</h1>
+      <table border="1" style="margin-bottom: 15px;">
+        <theader>
+            <tr>
+                <th style="border: 1px solid;padding: 10px 20px;"colspan="2">&nbsp;</th>
+                <th>Name</th>
+                <th>Mass(10<sup>24</sup>kg)</th>
+                <th>Diameter (km)</th>
+            </tr>
+        </theader>
+        <tbody>
+            <tr>
+                <th rowspan="4" colspan="2">Terrestial planets</th>
+                <th>Mercury</th>
+                <td>0.330</td>
+                <td>4,879</td>
+            </tr>
+            <tr>
+                <th>Venus</th>
+                <td>4.87</td>
+                <td>12,104</td>
+            </tr>
+            <tr>
+                <th>Earth</th>
+                <td>5.97</td>
+                <td>12,756</td>
+            </tr>
+            <tr>
+                <th>Mars</th>
+                <td>0.642</td>
+                <td>6,792</td>
+            </tr>
+            <tr>
+                <th rowspan="4">Jovian planets</th>
+                <th rowspan="2">Gas giants</th>
+                <th>Jupiter</th>
+                <td>1898</td>
+                <td>142,984</td>
+            </tr>
+            <tr>
+                <th>Saturn</th>
+                <td>568</td>
+                <td>120,536</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Ice giants</th>
+                <th>Uranus</th>
+                <td>86.8</td>
+                <td>51,118</td>
+            </tr>
+            <tr>
+                <th>Neptune</th>
+                <td>102</td>
+                <td>49,528</td>
+            </tr>
+            <tr>
+                <th colspan="2">Dwarf planets</th>
+                <th>Pluto</th>
+                <td>0.0146</td>
+                <td>2,370</td>
+            </tr>
+            </tbody>
+            </table> 
+       <fieldset>  
+       <legend>Ask us about planets</legend>
+<form>
+    <div style="margin-bottom: 15px;"> 
+    <label>Full name:</label>
+    <input type="text" />
+    </div>
+    <div style="margin-bottom: 15px;">
+    <label>Email:</label>
+    <input type="text" />
+    </div>
+
+        <legend style="margin-bottom: 15px;" >Favorite planet:</legend>
+    <div> 
+        <input type="radio" id="Mercury"name="planet" value="M">
+        <label for="Mercury">Mercury</label>
+    </div>
+    <div>
+        <input type="radio" id="Venus" name="planet" value="V">
+        <label for="Venus">Venus</label>
+    </div>
+    <div>
+        <input type="radio" id="Earth" name="planet" value="E" checked="checked">
+        <label for="Earth">Earth</label>
+    </div>
+    <div>
+        <input type="radio" id="Mars" name="planet" value="M">
+        <label for="Mars">Mars</label>
+    </div>
+    <div>
+        <input type="radio" id="Jupiter" name="planet" value="J">
+        <label for="Jupiter">Jupiter</label>
+    </div>
+    <div>
+        <input type="radio" id="Saturn" name="planet" value="S">
+        <label for="Saturn">Saturn</label>
+    </div>
+    <div>
+        <input type="radio" id="Uranus" name="planet" value="U">
+        <label for="Uranus">Uranus</label>
+    </div>
+    <div>
+        <input type="radio" id="Neptune" name="planet" value="N">
+        <label for="Neptune">Neptune</label>
+    </div>
+    <div style="margin-bottom: 15px;">
+        <input type="radio" id="Pluto" name="planet" value="P">
+        <label for="Pluto">Pluto</label>
+    </div>
+        <div style="margin-bottom: 15px;">
+        <input type="checkbox">I agree to the <a href="url">terms and conditions</a>
+        </div>
+        <div>
+         <button class="resetare";type="reset">Reset</button>        
+         <button class="intreaba";type="button">Ask away</button>
+        </div>
+    </div>
+    </fieldset>
+</form>
+</body>
+</html>
