@@ -7,8 +7,11 @@
     <title>Planets</title>
 </head>
 <body>
+    
     <h1>Planets</h1>
-      <table border="1" style="margin-bottom: 15px;">
+      
+    <table border="1" style="margin-bottom: 15px;">
+        
         <theader>
             <tr>
                 <th style="border: 1px solid;padding: 10px 20px;"colspan="2">&nbsp;</th>
@@ -17,6 +20,7 @@
                 <th>Diameter (km)</th>
             </tr>
         </theader>
+        
         <tbody>
             <tr>
                 <th rowspan="4" colspan="2">Terrestial planets</th>
@@ -70,62 +74,81 @@
             </tr>
             </tbody>
             </table> 
-       <fieldset>  
-       <legend>Ask us about planets</legend>
-<form>
-    <div style="margin-bottom: 15px;"> 
-    <label>Full name:</label>
-    <input type="text" />
-    </div>
+       
+    <fieldset>  
+       
+        <legend>Ask us about planets</legend>
+    
+    <form>
+    
     <div style="margin-bottom: 15px;">
-    <label>Email:</label>
-    <input type="text" />
+        <label for="name">Full name:</label>
+        <input type="fullname" placeholder="Enter full name" />
+    </div>
+    
+    <div style="margin-bottom: 15px;">
+        <label tabindex="0" for="email">Email:</label>
+        <input id="email" type="email" placeholder="Enter your email" autofocus name="email" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" />
     </div>
 
         <legend style="margin-bottom: 15px;" >Favorite planet:</legend>
+    
     <div> 
         <input type="radio" id="Mercury"name="planet" value="M">
         <label for="Mercury">Mercury</label>
     </div>
+    
     <div>
         <input type="radio" id="Venus" name="planet" value="V">
         <label for="Venus">Venus</label>
     </div>
+    
     <div>
         <input type="radio" id="Earth" name="planet" value="E" checked="checked">
         <label for="Earth">Earth</label>
     </div>
+    
     <div>
         <input type="radio" id="Mars" name="planet" value="M">
         <label for="Mars">Mars</label>
     </div>
+    
     <div>
         <input type="radio" id="Jupiter" name="planet" value="J">
         <label for="Jupiter">Jupiter</label>
     </div>
+    
     <div>
         <input type="radio" id="Saturn" name="planet" value="S">
         <label for="Saturn">Saturn</label>
     </div>
+    
     <div>
         <input type="radio" id="Uranus" name="planet" value="U">
         <label for="Uranus">Uranus</label>
     </div>
+    
     <div>
         <input type="radio" id="Neptune" name="planet" value="N">
         <label for="Neptune">Neptune</label>
     </div>
+    
     <div style="margin-bottom: 15px;">
         <input type="radio" id="Pluto" name="planet" value="P">
         <label for="Pluto">Pluto</label>
     </div>
-        <div style="margin-bottom: 15px;">
+    
+    <div style="margin-bottom: 15px;">
         <input type="checkbox">I agree to the <a href="url">terms and conditions</a>
-        </div>
-        <div>
-         <button class="resetare";type="reset">Reset</button>        
-         <button class="intreaba";type="button">Ask away</button>
-        </div>
+    </div>
+    
+    <div>
+         
+        <input type="Reset" value="Reset" />
+        
+        <input type="submit" value="Ask away" />
+        
+    </div>
     </div>
     </fieldset>
 </form>
